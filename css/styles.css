@@ -54,7 +54,8 @@ h6 {
 /* --------------- Hero section ------------- */
 #hero-section,
 #destination-section,
-#features-section,#contact-section {
+#features-section,
+#contact-section {
   padding-top: 100px;
 }
 
@@ -85,15 +86,23 @@ h6 {
 }
 /* Find more btn */
 .find-more-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
   background-color: #f1a501;
+  color: #fff;
   font-size: 1rem;
   box-shadow: 0 1.25rem 2.1875rem 0 rgba(241, 165, 1, 0.15);
   transition: 0.3s;
 }
 .find-more-btn:hover {
   background-color: #de9802;
+  color: #fff;
 }
-
+.find-more-btn:active {
+  background-color: #de9802;
+}
 /* Booking Arrow btn */
 .hidden-btn-text {
   font-size: 1rem;
@@ -153,6 +162,10 @@ h6 {
   border-radius: 8px;
   background-color: #fff;
   color: #000;
+  outline: none;
+}
+.email-input:focus {
+  outline: 1px solid #b24029;
 }
 .subscription-btn {
   background-color: #d0624c;
@@ -172,7 +185,8 @@ h6 {
 /* -------------- Destination Page styles ---------- */
 .destination-subtitle,
 .testimonial-subtitle,
-.features-subtitle,.contact-subtitle {
+.features-subtitle,
+.contact-subtitle {
   color: rgb(94, 98, 130);
   font-size: 1.5rem;
   font-weight: bold;
@@ -268,9 +282,13 @@ h6 {
 .ongoing-trip-card {
   box-shadow: -10px 0px 80px 50px rgba(174, 178, 209, 0.586);
   padding: 20px;
-width: 450px;
+  width: 450px;
   height: auto;
   border-radius: 1.25rem;
+  transition: trasnform 0.3s ease;
+}
+.ongoing-trip-card:hover {
+  transform: scale(1.05);
 }
 .ongoing-trip-card img {
   width: 100%;
@@ -300,11 +318,10 @@ width: 450px;
   color: #fff;
   font-size: 1rem;
 }
-.trip-card-footer{
+.trip-card-footer {
   margin-top: 30px;
-
 }
-.trip-card-footer i{
+.trip-card-footer i {
   font-size: 1rem;
 }
 
@@ -360,7 +377,6 @@ width: 450px;
   object-fit: cover;
 }
 
-
 /* -------------- Contact page styles ------------- */
 .form-container {
   background-color: #8e9fb6e4;
@@ -368,21 +384,21 @@ width: 450px;
   border-radius: 1.25rem;
   color: #212832;
 }
-.custom-form-group{
+.custom-form-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.custom-form-input{
+.custom-form-input {
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
   outline: none;
 }
-.custom-form-input:focus{
+.custom-form-input:focus {
   outline: 2px solid #b85743;
 }
-.form-container input[type=submit]{
+.form-container input[type="submit"] {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -390,7 +406,7 @@ width: 450px;
   color: #fff;
   font-weight: 600;
 }
-.form-container input[type=submit]:hover{
+.form-container input[type="submit"]:hover {
   background-color: #b24029;
 }
 /* ------------- Footer --------------------- */
@@ -488,10 +504,9 @@ footer {
   .card-section-container {
     padding: 1.25rem 0;
   }
-  .ongoing-trip-card{
+  .ongoing-trip-card {
     width: 580px;
     max-width: 100%;
-    
   }
 
   /* footer  */
