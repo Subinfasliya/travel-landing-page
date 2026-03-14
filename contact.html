@@ -36,13 +36,13 @@
                             <a class="nav-link " href="index.html">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active-link" href="#">Destination</a>
+                            <a class="nav-link " href="destination.html">Destination</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="features.html">Features</a>
+                            <a class="nav-link " href="features.html">Features</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link active-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
@@ -63,68 +63,114 @@
     <!-- Main section -->
     <main>
 
-        <!-- Destination section starts -->
-        <section id="destination-section">
+        <!-- contact section starts -->
+        <section id="contact-section">
             <article>
                 <div class="container py-3 my-0 my-lg-5">
-                    <!-- Destionation header groups -->
-                    <hgroup class="destination-header">
-                        <p class="destination-subtitle ">Top Selling</p>
-                        <h2 class="display-3">Destination</h2>
-                    </hgroup>
 
+                    <div class="row">
+                        <!-- Left side section -->
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <!-- contact header groups -->
+                            <hgroup>
+                                <p class="contact-subtitle ">Let’s Plan Your Next Adventure</p>
+                                <h2 class="display-3 mb-3 lead">Get In Touch</h2>
+                            </hgroup>
+                            <p class="mb-5">Have questions or need help planning your trip? Our team is here to help you
+                                every step
+                                of the way</p>
 
-                    <div class="row gy-5 ">
-                        <div class="col-12 col-md-6 col-lg-4 ">
-                            <!-- Destination Card First-->
-                            <div class="destination-card">
-                                <img src="images/destination-idukki.jpg"
-                                    alt="Idukki Mountain Picture">
-                                <div class="destination-card-body">
-                                    <div class="card-header">
-                                        <h4>Idukki</h4>
-                                        <p>6000 Rs. per Head</p>
+                            <!-- location details -->
+                            <div class="row mb-4">
+                                <div class="col-12 col-md-6  mb-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Location</h5>
+                                            <p class="card-text">Ponnani, Malappuram Dist</p>
+                                        </div>
                                     </div>
-                                    <p class="card-body-text"><span><i class="fa-solid fa-location-arrow"></i></span> 5
-                                        Days Trip</p>
                                 </div>
+                                <div class="col-12 col-md-6 mb-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Phone</h5>
+                                            <p class="card-text">
+                                                <a class="text-decoration-none text-danger fw-bold"
+                                                    href="tel:+91 7994703723">+91 7994 70 3723</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <!-- Email details -->
+                                   <div class="col-12">
+                                     <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Email</h5>
+                                            <p class="card-text">
+                                                <a class="text-decoration-none text-danger fw-semibold" href="mailto:subinfasliya@gmail.com">travlerofficial@gmail.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                   </div>
                             </div>
+
+                          
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <!-- Destination Card Second -->
-                            <div class="destination-card">
-                                <img src="images/destination-newzeland.webp"
-                                    alt="New Zealand Mountain Road Picture">
-                                <div class="destination-card-body">
-                                    <div class="card-header">
-                                        <h4>New Zealand</h4>
-                                        <p>35k Rs. per Head</p>
+                        <!-- Right side section -->
+                        <div class="col-12 col-md-12 col-lg-6 ">
+                            <form class="form-container" action="#">
+
+                                <div class="row">
+                                    <div class="col-6 mb-4">
+
+                                        <!-- User name  -->
+                                        <div class="custom-form-group">
+                                            <!-- Text input for user name -->
+                                            <label for="firstName">Full Name</label>
+                                            <input type="text" id="firstName" name="firstName" required minlength="3"
+                                                maxlength="30" class="custom-form-input">
+                                        </div>
+
                                     </div>
-                                    <p class="card-body-text"><span><i class="fa-solid fa-location-arrow"></i></span> 25
-                                        Days Trip</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4">
-                            <!-- Destination Card Third -->
-                            <div class="destination-card">
-                                <img src="images/destination-saudi.avif"
-                                    alt="Saudi Arabia Desert Picture">
-                                <div class="destination-card-body">
-                                    <div class="card-header">
-                                        <h4>Saudi Arabia</h4>
-                                        <p>12k Rs. per Head</p>
+                                    <div class="col-6 mb-4">
+                                        <!-- User last name  -->
+                                        <div class="custom-form-group">
+                                            <!-- Text input for user last name -->
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" id="lastName" name="lastName" required minlength="3"
+                                                maxlength="30" class="custom-form-input">
+                                        </div>
                                     </div>
-                                    <p class="card-body-text"><span><i class="fa-solid fa-location-arrow"></i></span> 10
-                                        Days Trip</p>
+
+                                    <!-- Email input field for use email -->
+                                    <div class="col-12 mb-4">
+                                        <div class="custom-form-group">
+                                            <label for="emal">Email</label>
+                                            <input type="email" required class="custom-form-input">
+                                        </div>
+                                    </div>
+
+                                    <!-- Phone (tel) field for use tel phone number -->
+                                    <div class="col-12 mb-4">
+                                        <div class="custom-form-group">
+                                            <label for="phone">Mobile</label>
+                                            <input type="tel" required name="phone" id="phone"
+                                                class="custom-form-input">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                <!-- Form Submit Button  -->
+                                <input type="submit" value="Submit">
+
+                            </form>
                         </div>
                     </div>
+
+
                 </div>
             </article>
         </section>
-        <!-- Destination sectio ends -->
+        <!-- contact section ends -->
 
 
         <!-- Testimonial Section -->
@@ -154,8 +200,7 @@
                                 <div class="carousel-item">
                                     <!-- Testimonial Person Card Second -->
                                     <div class="card testimonial-card">
-                                        <img src="images/testimonial-person2.png"
-                                            alt="Testimonial Customer Picture">
+                                        <img src="images/testimonial-person2.png" alt="Testimonial Customer Picture">
                                         <div class="card-body pt-4">
                                             <p class="card-text">"Professional service and great travel packages.
                                                 Everything was perfectly arranged."</p>
@@ -167,8 +212,7 @@
                                 <div class="carousel-item">
                                     <!-- Testimonial Person Card Third -->
                                     <div class="card testimonial-card">
-                                        <img src="images/testimonial-person3.jpg"
-                                            alt="Testimonial Customer Picture">
+                                        <img src="images/testimonial-person3.jpg" alt="Testimonial Customer Picture">
                                         <div class="card-body pt-4">
                                             <p class="card-text">"Amazing experience! Everything from booking to the
                                                 trip was smooth and well organized."</p>
