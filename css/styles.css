@@ -395,6 +395,15 @@ h6 {
   border: none;
   outline: none;
 }
+.custom-form-group textarea{
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.custom-form-group textarea:focus{
+   outline: 2px solid #b85743;
+}
 .custom-form-input:focus {
   outline: 2px solid #b85743;
 }
